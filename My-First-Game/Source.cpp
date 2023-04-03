@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
@@ -8,6 +9,9 @@ int main()
 
 	int myInt;
 	myInt = 23;
+
+	cout << myCharacter << endl;
+	cout << myInt << endl;
 	
 	
 	system("pause");
