@@ -13,6 +13,9 @@ int main()
 	cout << myCharacter << endl;
 	cout << myInt << endl;
 	
-	
+	/* bi variable'ın değerini tekrar tekrar değiştirebilirim, not in stone!! örnek olarak: */
+	myCharacter = 'A';
+	cout << myCharacter << endl;
+
 	system("pause");
 }
