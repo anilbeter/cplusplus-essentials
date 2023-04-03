@@ -2,6 +2,10 @@
 
 int main()
 {
-	std::cout << "Hello World!\n";
+	char myCharacter;
+	myCharacter = 'y';
+	/* Single quote kullandim char da singe kullanilir unutma! Double quote stringi temsil eder. */
+	
+	
 	system("pause");
 }
