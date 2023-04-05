@@ -3,19 +3,14 @@ using namespace std;
 
 int main()
 {
-	char myCharacter;
-	myCharacter = 'y';
-	/* Single quote kullandim char da singe kullanilir unutma! Double quote stringi temsil eder. */
+	int a(1);
+	int b = 13;
 
-	int myInt;
-	myInt = 23;
+	if (b > a)
+	{
+		cout << "B is greater than A." << endl;
+	}
 
-	cout << myCharacter << endl;
-	cout << myInt << endl;
-	
-	/* bi variable'ın değerini tekrar tekrar değiştirebilirim, not in stone!! örnek olarak: */
-	myCharacter = 'A';
-	cout << myCharacter << endl;
 
 	system("pause");
 }
