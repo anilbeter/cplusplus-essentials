@@ -10,8 +10,11 @@ int main()
 	{
 		cout << "A is greater than B." << endl;
 	}
-	else
+	else if (a == b)
 	{
+		cout << "A and B are equal." << endl;
+	}
+	else {
 		cout << "B is greater than A." << endl;
 	}
 
