@@ -7,13 +7,11 @@ char getYesNo();
 
 void printResponse(char responseToPrint);
 
+void AskYesOrNoQuestion();
+
 int main()
 {
-	welcome();
-	
-	char answer = getYesNo();
-	printResponse(answer);
-
+	AskYesOrNoQuestion();
 	system("pause");
 }
 
@@ -34,4 +32,11 @@ char getYesNo()
 void printResponse(char responseToPrint)
 {
 	cout << "Your answer was: " << responseToPrint << endl;
+}
+
+void AskYesOrNoQuestion()
+{
+	welcome();
+	char answer = getYesNo();
+	printResponse(answer);
 }
