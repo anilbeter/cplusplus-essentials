@@ -5,10 +5,14 @@ void welcome();
 
 char getYesNo();
 
+void printResponse(char responseToPrint);
+
 int main()
 {
 	welcome();
-	getYesNo();
+	
+	char answer = getYesNo();
+	printResponse(answer);
 
 	system("pause");
 }
@@ -24,7 +28,10 @@ char getYesNo()
 
 	char response;
 	cin >> response;
-
-	cout << "Your answer is: " << response << endl;
 	return response;
+}
+
+void printResponse(char responseToPrint)
+{
+	cout << "Your answer was: " << responseToPrint << endl;
 }
