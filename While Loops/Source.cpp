@@ -3,16 +3,30 @@ using namespace std;
 
 int main()
 {
-	int myInt(0);
+	double numberPi = 3.14159;
+	double numberE = 2.711829585;
+	int count = 1;
+	bool Condition = true;
 
-	int count = 0;
-
-	while (count < 10)
+	do
 	{
-		cout << myInt << endl;
-		myInt++;
+		cout << "Loop: " << count << endl;
+		cout << "Number Pi is: " << numberPi << endl;
+		cout << "Number E is: " << numberE << endl;
+		cout << "(Number E + Number Pi) * " << count << " = " << (numberE + numberPi) * count << endl;
+		cout << endl;
 		count++;
-	}
+
+		if (count <= 100)
+		{
+			Condition = true;
+		}
+		else
+		{
+			Condition = false;
+		}
+	} while (Condition);
+
 
 	system("pause");
 }
