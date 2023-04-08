@@ -10,8 +10,9 @@ int main()
 	while (count < 10)
 	{
 		cout << myInt << endl;
+		myInt++;
 		count++;
 	}
-	/* myInt variable'ýný (yani 0'ý) 10 defa yazdýran basit bir while loopu */
+
 	system("pause");
 }
