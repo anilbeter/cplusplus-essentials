@@ -11,13 +11,12 @@ int main()
 
 	ChangeStr(myStr);
 	cout << myStr << endl;
-	/* Output: Anil. Eee ünlem nerede? açýklamasý aþaðýdaki comment */
+	/*Beklenen output: Anil! */
 
 	system("pause");
 }
 
 void ChangeStr(string& str)
-/* string& yazmadýðým için Anil'in sonuna ! eklemeyecek. Ref almýyorum çünkü */
 {
 	str += "!";
 }
