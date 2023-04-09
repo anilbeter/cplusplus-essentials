@@ -3,7 +3,7 @@
 /* #include <string>, string tanýmlamama olanak asðlýyor */
 using namespace std;
 
-void ChangeStr(string str);
+void ChangeStr(string& str);
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
 	system("pause");
 }
 
-void ChangeStr(string str)
+void ChangeStr(string& str)
 /* string& yazmadýðým için Anil'in sonuna ! eklemeyecek. Ref almýyorum çünkü */
 {
 	str += "!";
