@@ -3,15 +3,12 @@ using namespace std;
 
 int main()
 {
-	int MyIntArray[10]{};
+/* Array oluþturmanýn bir baþka yolu: */
+	int myArray[5] = { 1, 23, 20, 24, 27 };
 
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 5; i++)
 	{
-		MyIntArray[i] = i;
+		cout << "myArray[" << i << "] " << "= " << myArray[i] << endl;
 	}
-			
-	cout << "The first element in MyIntArray is: " << MyIntArray[0] << endl;
-	cout << "The fifth element is: " << MyIntArray[4] << endl;
-
 	system("pause");
 }
