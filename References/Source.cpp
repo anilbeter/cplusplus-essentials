@@ -3,22 +3,21 @@
 /* #include <string>, string tanýmlamama olanak asðlýyor */
 using namespace std;
 
+void ChangeStr(string str);
+
 int main()
 {
 	string myStr = "Anil";
 
-	string& myRef = myStr;
-	/* & koyarak ref variable oluþturdum. myReF = Anil oldu çünkü myStr = Anil, referans aldýðýmýz variable myRef */
-	
-	
+	ChangeStr(myStr);
 	cout << myStr << endl;
-	/*Anil*/
-	cout << myRef << endl;
-	/*Anil*/
-
-	myRef += " Beter";
-	cout << myRef << endl;
-	/* Anil Beter */
+	/* Output: Anil. Eee ünlem nerede? açýklamasý aþaðýdaki comment */
 
 	system("pause");
+}
+
+void ChangeStr(string str)
+/* string& yazmadýðým için Anil'in sonuna ! eklemeyecek. Ref almýyorum çünkü */
+{
+	str += "!";
 }
