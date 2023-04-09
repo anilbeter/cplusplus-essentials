@@ -7,7 +7,10 @@ int main()
 	{
 		for (int j = 0; j <= 10; j++)
 		{
-			cout << "i = " << i << ", and j = " << j << endl;
+			for (int k = 0; k <= 10; k++)
+			{
+				cout << "i = " << i << ", j = " << j << ", and k = " << k << endl;
+			}
 		}
 	}
 
