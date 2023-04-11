@@ -2,9 +2,9 @@
 #include <string>
 using namespace std;
 
-	
+
 enum PlayerStatus  /* enum PlayerStatus yazarak, playerStatus adýnda bir data type oluþturdum. Týpký int gibi, string gibi. */
-{   
+{
 	PS_Crouched,
 	PS_Standing,
 	PS_Walking,
