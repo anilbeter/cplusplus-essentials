@@ -62,5 +62,9 @@ void SwitchStatementWithInt(int i)
 		break;
 	case 23:
 		cout << "I LOVE 23! 23 IS MY TRANSFORMATION" << endl;
+		break;
+	default:
+		cout << "Sorry, I only know about 0, 1 and 23..." << endl;
+
 	}
 }
