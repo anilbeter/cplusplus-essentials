@@ -21,5 +21,11 @@ int main()
 		cout << "The player is crouching." << endl;
 	}
 
+	status = PS_Running;
+	if (status == PS_Running)
+	{
+		cout << "The player is running." << endl;
+	}
+
 	system("pause");
 }
