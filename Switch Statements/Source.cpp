@@ -32,16 +32,16 @@ int main()
 
 void UpdateMovementSpeed(PlayerStatus P_Status, float& speed)
 {
-	if (P_Status == PS_Running)
+	switch (P_Status)
 	{
+	case PS_Running:
 		speed = RunSpeed;
-	}
-	else if (P_Status == PS_Walking)
-	{
+		break;
+	case PS_Walking:
 		speed = WalkSpeed;
-	}
-	else if (P_Status == Ps_Crouching)
-	{
+		break;
+	case Ps_Crouching:
 		speed = CrouchSpeed;
+		break;
 	}
 }
