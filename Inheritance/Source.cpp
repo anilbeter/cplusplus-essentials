@@ -39,11 +39,9 @@ Animal::Animal()
 	NumberOfLimbs = 4;
 }
 
-Animal::Animal(string name, int age, int num_limbs)
+Animal::Animal(string name, int age, int num_limbs): Name(name), Age(age), NumberOfLimbs(num_limbs)
 {
-	Name = name;
-	Age = age;
-	NumberOfLimbs = num_limbs;
+
 }
 
 void Animal::Report()
