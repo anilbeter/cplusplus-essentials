@@ -3,12 +3,23 @@
 #include <cstdlib>
 using namespace std;
 
+struct LocationVector
+{
+	float X;
+	float Y;
+	float Z;
+};
+
+
 struct Player
 {
 	int Level;
 	float Health;
 	float Damage;
 	float Stamina;
+	
+	LocationVector Location = { 0.f, 0.f, 0.f };
+	
 	void TakeDamage(float dmg)
 	{
 		Health -= dmg;
@@ -22,7 +33,16 @@ struct Player
 		return Level;
 	}
 
+	void DisplayLocation()
+	{
+		cout << "Location.X = " << Location.X << endl;
+		cout << "Location.Y = " << Location.Y << endl;
+		cout << "Location.Z = " << Location.Z << endl;
+	}
+
 };
+
+
 
 int main()
 {
@@ -39,6 +59,8 @@ int main()
 
 	cout << "p_1 takes " << 40.f << " damage!" << endl;
 	cout << "p_1 health = " << p_1.Health << endl;
+
+	p_1.DisplayLocation();
 
 	system("pause");
 }
