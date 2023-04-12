@@ -6,6 +6,7 @@ class Animal
 {
 public:
 	Animal();
+	Animal(string name, int age, int num_limbs);  // Overloaded function
 
 	string Name;
 	int Age;
