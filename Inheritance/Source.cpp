@@ -6,6 +6,7 @@ class Animal
 {
 public:
 	Animal();
+	
 	Animal(string name, int age, int num_limbs);  // Overloaded function
 
 	string Name;
@@ -23,6 +24,9 @@ int main()
 
 	animal.Report();
 
+	Animal animal_2("Shark", 4, 0);
+	animal_2.Report();
+
 	system("pause");
 }
 
@@ -33,6 +37,13 @@ Animal::Animal()
 	Name = "Default";
 	Age = 2;
 	NumberOfLimbs = 4;
+}
+
+Animal::Animal(string name, int age, int num_limbs)
+{
+	Name = name;
+	Age = age;
+	NumberOfLimbs = num_limbs;
 }
 
 void Animal::Report()
