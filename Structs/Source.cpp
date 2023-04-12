@@ -62,5 +62,15 @@ int main()
 
 	p_1.DisplayLocation();
 
+	Player p_2 = { 23, 27.f, 70.f, 100.f, {35.7f, 23.6f, -100.56f} };
+
+
+	cout << "P_2 Level is = " << p_2.Level << endl;
+	cout << "P_2 Health = " << p_2.Health << endl;
+	cout << "P_2 Damage is = " << p_2.Damage << endl;
+	cout << "P_2 Stamina is = " << p_2.Stamina << "Lets GO!!!" << endl;
+	p_2.DisplayLocation();
+
+
 	system("pause");
 }
