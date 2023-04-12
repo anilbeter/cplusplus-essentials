@@ -11,5 +11,8 @@ int main()
 	cout << aPointer << endl;
 	/* Output ---> 000000879090FBC4 */
 
+	cout << *aPointer << endl;
+	/* Output ----> 23 */
+
 	system("pause");
 }
