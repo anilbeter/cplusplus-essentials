@@ -2,30 +2,33 @@
 #include <string>
 using namespace std;
 
+struct Container
+{
+	string Name;
+	int X;
+	int Y;
+	int Z;
+};
+
 
 int main()
 {
-	int numbers[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	Container container = { "Anil", 3, 4, 5 };
 
-	int* NumPtr = numbers;
-	/* Pointerý bir array'e eþitlersem otomatik olarak arrayin ilk (0. indexini) indexini referans alacak. Yani NumPtr bu durumda 0 a eþit olucak */
+	Container* PtrToCont = &container;
 
-	cout << *NumPtr << endl;
-	// Output ---> 0
+	cout << (*PtrToCont).Name << endl;
+	// Output ----> Anil
 
-	/* NumPtr++ yazarak bunu deðiþtirebilirim, NumPtr++ yazarsam hemen bi yanýndaki indexe geçicek, yani bizim durumumuzda 1 */
+	cout << PtrToCont->Name << endl;
+	// Output -----> Anil (Üstteki kod ile tamamen ayný, ama daha fancy daha tatlý geliyor göze)
 
-	NumPtr++;
-	cout << *NumPtr << endl;
-	// Output ---> 1
+	cout << PtrToCont->X << endl;
+	// Output ----> 3
 
-	NumPtr++;
-	cout << *NumPtr << endl;
-	// Output ---> 2
+	
 
-	NumPtr += 3; /* 2 numaralý indexi gösteriyordu, 3 ekledim 5 oldu. 5 numaralý index = 5 */
-	cout << *NumPtr << endl;
-	// Output ---> 5
+
 
 	system("pause");
 }
