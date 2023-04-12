@@ -5,6 +5,12 @@ using namespace std;
 
 class Dog {
 public:
+	
+	Dog()    // Bu Constructor olarak adlandýrýlýyor. Class ismi ile ayný olmak zorunda
+	{
+		Bark();
+	}
+
 	string Name;
 	int Age;
 	float Health;
@@ -18,7 +24,7 @@ public:
 int main()
 {
 	Dog dog;
-	dog.Bark();
+	// Output ---> Woof!
 
 	system("pause");
 }
