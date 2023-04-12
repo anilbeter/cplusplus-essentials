@@ -4,6 +4,7 @@ using namespace std;
 
 
 class Dog {
+public:
 	string Name;
 	int Age;
 	float Health;
@@ -16,9 +17,8 @@ class Dog {
 
 int main()
 {
-	Dog Rex;
-	Dog Ocean;
-
+	Dog dog;
+	dog.Bark();
 
 	system("pause");
 }
