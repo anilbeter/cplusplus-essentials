@@ -20,7 +20,7 @@ public:
 class Dog : public Animal  /* Dog inheritances everything in Animal (child-parent) */
 {
 public:
-	
+	Dog();
 };
 
 int main()
@@ -52,4 +52,9 @@ void Animal::Report()
 	cout << "Animal's name is " << Name << endl;
 	cout << "Animal's age is " << Age << endl;
 	cout << "Animal's limbs number is " << NumberOfLimbs << endl;
+}
+
+Dog::Dog()
+{
+	cout << "Wooff!" << endl;
 }
