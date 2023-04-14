@@ -18,6 +18,8 @@ int main()
 
 	Creature Igor;
 	/* Output ---> A creature has been created! */
+	Igor.Name = "Anil";
+	/* ERROR --> member Creature:Name is inaccessible */
 
 	system("pause");
 }
