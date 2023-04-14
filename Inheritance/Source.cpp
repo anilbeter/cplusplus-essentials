@@ -27,7 +27,7 @@ public:
 int main()
 {
 	Dog dog("Rex", 3, 4);
-	/* Output ----> An animal is borned!
+	/* Output ----> 
 					Animal's name is Rex
 					Animal's age is 3
 					Animal's limbs number is 4 
@@ -64,7 +64,7 @@ Dog::Dog()
 	cout << "Wooff!" << endl;
 }
 
-Dog::Dog(string name, int age, int num_limbs)
+Dog::Dog(string name, int age, int num_limbs) : Animal(name, age, num_limbs)
 {
-	Animal(name, age, num_limbs);
+
 }
