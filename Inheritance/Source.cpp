@@ -17,15 +17,17 @@ public:
 };
 
 
+class Dog : public Animal  /* Dog inheritances everything in Animal (child-parent) */
+{
+public:
+	
+};
+
 int main()
 {
+	Dog dog;
+	/* Output ---> An animal is borned! */
 
-	Animal animal;
-
-	animal.Report();
-
-	Animal animal_2("Shark", 4, 0);
-	animal_2.Report();
 
 	system("pause");
 }
@@ -39,9 +41,10 @@ Animal::Animal()
 	NumberOfLimbs = 4;
 }
 
-Animal::Animal(string name, int age, int num_limbs): Name(name), Age(age), NumberOfLimbs(num_limbs)
+Animal::Animal(string name, int age, int num_limbs):
+	Name(name), Age(age), NumberOfLimbs(num_limbs)
 {
-
+	Report();
 }
 
 void Animal::Report()
