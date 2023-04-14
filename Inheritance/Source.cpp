@@ -21,12 +21,17 @@ class Dog : public Animal  /* Dog inheritances everything in Animal (child-paren
 {
 public:
 	Dog();
+	Dog(string name, int age, int num_limbs);
 };
 
 int main()
 {
-	Dog dog;
-	/* Output ---> An animal is borned! */
+	Dog dog("Rex", 3, 4);
+	/* Output ----> An animal is borned!
+					Animal's name is Rex
+					Animal's age is 3
+					Animal's limbs number is 4 
+	*/
 
 
 	system("pause");
@@ -57,4 +62,9 @@ void Animal::Report()
 Dog::Dog()
 {
 	cout << "Wooff!" << endl;
+}
+
+Dog::Dog(string name, int age, int num_limbs)
+{
+	Animal(name, age, num_limbs);
 }
